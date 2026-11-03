@@ -1,0 +1,13 @@
+name: Práctica 1 - Hola Mundo
+
+# Evento: se ejecuta cada vez que se hace push a cualquier rama
+on:
+  push:
+
+jobs:
+  prueba:
+    # Ejecutor: máquina virtual de Ubuntu que proporciona GitHub
+    runs-on: ubuntu-latest
+    steps:
+      - name: Saludar
+        run: echo "HOLA MUNDO"
